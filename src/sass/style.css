@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  height: 90px;
+  height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +26,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: var(--white);
+}
+
+.header-image {
+  padding: 0 20px;
+  margin: 0;
 }
 
 .wrapper {
@@ -34,19 +40,38 @@ body {
 
 .hero {
   text-align: center;
+  padding-bottom: 5em;
+}
+
+.hero-image {
+  margin: auto;
+  height: 345px;
+  background-image: url("../../assets/images/bg-intro-mobile.svg") center no-repeat;
+  /*  background-repeat: no-repeat;
+    background-position-x: center; */
+  position: relative;
+  z-index: -10;
+  top: -45px;
+}
+
+.hero-image img {
+  width: 360px;
+  position: relative;
+  z-index: -10;
+  top: -82px;
 }
 
 .title-h1 {
   font-size: 2.4em;
   font-weight: 400;
-  margin: 20px 0;
+  margin: 0px 0 20px 0;
 }
 
 .paragraph {
   font-size: 0.9em;
   line-height: 1.5em;
   color: var(--grayBlue);
-  margin-bottom: 2em;
+  margin-bottom: 2.2em;
 }
 
 .button {
@@ -60,5 +85,9 @@ body {
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);
   color: var(--white);
   text-decoration: none;
+}
+
+.choose {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

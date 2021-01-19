@@ -16,10 +16,15 @@ body {
 }
 
 .header {
-  height: 90px;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--white);
+  &-image {
+    padding: 0 20px;
+    margin: 0;
+  }
 }
 
 .wrapper {
@@ -28,19 +33,39 @@ body {
 
 .hero {
   text-align: center;
+  padding-bottom: 5em;
+
+  &-image {
+    //345 medida total del fondo
+    margin: auto;
+    height: 345px;
+    background-image: url("../../assets/images/bg-intro-mobile.svg") center
+      no-repeat;
+    /*  background-repeat: no-repeat;
+    background-position-x: center; */
+    position: relative;
+    z-index: -10;
+    top: -45px;
+  }
+  &-image img {
+    width: 360px;
+    position: relative;
+    z-index: -10;
+    top: -82px;
+  }
 }
 
 .title-h1 {
   font-size: 2.4em;
   font-weight: 400;
-  margin: 20px 0;
+  margin: 0px 0 20px 0;
 }
 
 .paragraph {
   font-size: 0.9em;
   line-height: 1.5em;
   color: var(--grayBlue);
-  margin-bottom: 2em;
+  margin-bottom: 2.2em;
 }
 
 .button {
@@ -57,4 +82,8 @@ body {
   );
   color: var(--white);
   text-decoration: none;
+}
+
+.choose {
+  text-align: center;
 }
