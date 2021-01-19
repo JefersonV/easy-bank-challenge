@@ -17,35 +17,48 @@ body {
 
 .header {
   height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper {
+  padding: 0 1.9em;
 }
 
 .hero {
-  border: 1px solid skyblue;
   text-align: center;
 }
 
 .title-h1 {
   font-size: 2.4em;
   font-weight: 400;
+  margin: 20px 0;
 }
 
 .paragraph {
+  font-size: 0.9em;
   line-height: 1.5em;
   color: var(--grayBlue);
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
 
 .button {
-  /* border: 1px solid red; */
+  display: block;
+  margin: 0 auto;
+  width: 120px;
   padding: 0.7em 1.7em;
   font-size: 1.1em;
   border-radius: 1.5em;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--limeGreen)), to(var(--rightCyan)));
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);
   color: var(--white);
   text-decoration: none;
 }
-
 /*# sourceMappingURL=style.css.map */
