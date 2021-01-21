@@ -1,3 +1,9 @@
+@import "./_header.scss";
+@import "./_hero.scss";
+@import "./_menu.scss";
+@import "./_choose.scss";
+@import "./_article.scss";
+
 :root {
   --grayBlue: hsl(233, 8%, 62%);
   --gray: hsl(220, 16%, 96%);
@@ -15,44 +21,8 @@ body {
   padding: 0;
 }
 
-.header {
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--white);
-  &-image {
-    padding: 0 20px;
-    margin: 0;
-  }
-}
-
 .wrapper {
   padding: 0 1.9em;
-}
-
-.hero {
-  text-align: center;
-  padding-bottom: 5em;
-
-  &-image {
-    //345 medida total del fondo
-    margin: auto;
-    height: 345px;
-    background-image: url("../../assets/images/bg-intro-mobile.svg") center
-      no-repeat;
-    /*  background-repeat: no-repeat;
-    background-position-x: center; */
-    position: relative;
-    z-index: -10;
-    top: -45px;
-  }
-  &-image img {
-    width: 360px;
-    position: relative;
-    z-index: -10;
-    top: -82px;
-  }
 }
 
 .title-h1 {
@@ -82,8 +52,4 @@ body {
   );
   color: var(--white);
   text-decoration: none;
-}
-
-.choose {
-  text-align: center;
 }

@@ -1,0 +1,27 @@
+.choose {
+  text-align: center;
+  background: var(--gray);
+  padding-top: 5em;
+}
+
+.choose-title {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.item {
+  &-p {
+    margin-bottom: 4em;
+  }
+  img {
+    margin-bottom: 1.5em;
+  }
+  h4 {
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+.is-hidden {
+  display: none;
+}

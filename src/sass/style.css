@@ -1,3 +1,97 @@
+.header {
+  padding: 1em 1.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--white);
+}
+
+.header-image {
+  margin: 0;
+}
+
+.hero {
+  text-align: center;
+  padding-bottom: 6em;
+}
+
+.hero-image {
+  margin: auto;
+  height: 345px;
+  background-image: url("../../assets/images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+  z-index: -10;
+  top: -45px;
+}
+
+.hero-image img {
+  width: 360px;
+  position: relative;
+  z-index: -10;
+  top: -82px;
+}
+
+.menu {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../assets/images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.choose {
+  text-align: center;
+  background: var(--gray);
+  padding-top: 5em;
+}
+
+.choose-title {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.item-p {
+  margin-bottom: 4em;
+}
+
+.item img {
+  margin-bottom: 1.5em;
+}
+
+.item h4 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.card-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article-image {
+  max-width: 100%;
+}
+
 :root {
   --grayBlue: hsl(233, 8%, 62%);
   --gray: hsl(220, 16%, 96%);
@@ -15,50 +109,8 @@ body {
   padding: 0;
 }
 
-.header {
-  height: 65px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: var(--white);
-}
-
-.header-image {
-  padding: 0 20px;
-  margin: 0;
-}
-
 .wrapper {
   padding: 0 1.9em;
-}
-
-.hero {
-  text-align: center;
-  padding-bottom: 5em;
-}
-
-.hero-image {
-  margin: auto;
-  height: 345px;
-  background-image: url("../../assets/images/bg-intro-mobile.svg") center no-repeat;
-  /*  background-repeat: no-repeat;
-    background-position-x: center; */
-  position: relative;
-  z-index: -10;
-  top: -45px;
-}
-
-.hero-image img {
-  width: 360px;
-  position: relative;
-  z-index: -10;
-  top: -82px;
 }
 
 .title-h1 {
@@ -85,9 +137,5 @@ body {
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);
   color: var(--white);
   text-decoration: none;
-}
-
-.choose {
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

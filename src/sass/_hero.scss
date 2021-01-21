@@ -1,0 +1,22 @@
+.hero {
+  text-align: center;
+  padding-bottom: 6em;
+
+  &-image {
+    //345 medida total del fondo
+    margin: auto;
+    height: 345px;
+    background-image: url("../../assets/images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+    z-index: -10;
+    top: -45px;
+  }
+  &-image img {
+    width: 360px;
+    position: relative;
+    z-index: -10;
+    top: -82px;
+  }
+}
