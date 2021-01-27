@@ -75,21 +75,104 @@
   display: none;
 }
 
+.title-h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.lastArticles {
+  background-color: var(--lightGray);
+}
+
+.lastArticles-grid {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2em;
+}
+
 .card-article {
+  background-color: var(--white);
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 1.7em;
+}
+
+.card-autor {
+  color: var(--grayBlue);
+  font-size: 0.7em;
+}
+
+.card-title {
+  font-weight: 400;
+}
+
+.article-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  background-color: #2d314d;
+}
+
+.footer-logo {
+  display: block;
+  padding-top: 1.7em;
+  margin: auto;
+}
+
+.footer-icons {
+  padding: 1.7em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.article-image {
-  max-width: 100%;
+.footer-icon {
+  padding-right: 0.8em;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--gray);
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.2em;
+  margin-bottom: 1.7em;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-button {
+  outline: none;
+  font-size: 0.8em;
+}
+
+.footer-paragraph {
+  color: var(--grayBlue);
+  font-size: 0.8em;
+  text-align: center;
+  margin: 0;
+  padding: 1.8em 0;
 }
 
 :root {
@@ -126,12 +209,12 @@ body {
   margin-bottom: 2.2em;
 }
 
-.button {
+.button, .footer-button {
   display: block;
   margin: 0 auto;
   width: 120px;
   padding: 0.7em 1.7em;
-  font-size: 1.1em;
+  font-size: 0.9em;
   border-radius: 1.5em;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--limeGreen)), to(var(--rightCyan)));
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);

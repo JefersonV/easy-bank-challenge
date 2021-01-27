@@ -1,9 +1,37 @@
+.title-h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.lastArticles {
+  background-color: var(--lightGray);
+  &-grid {
+    display: grid;
+    row-gap: 2em;
+  }
+}
+
 .card-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: var(--white);
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 1.7em;
+}
+
+.card-autor {
+  color: var(--grayBlue);
+  font-size: 0.7em;
+}
+
+.card-title {
+  font-weight: 400;
 }
 
 .article-image {
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }

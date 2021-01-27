@@ -3,6 +3,7 @@
 @import "./_menu.scss";
 @import "./_choose.scss";
 @import "./_article.scss";
+@import "./_footer.scss";
 
 :root {
   --grayBlue: hsl(233, 8%, 62%);
@@ -43,7 +44,7 @@ body {
   margin: 0 auto;
   width: 120px;
   padding: 0.7em 1.7em;
-  font-size: 1.1em;
+  font-size: 0.9em;
   border-radius: 1.5em;
   background-image: linear-gradient(
     to right,
