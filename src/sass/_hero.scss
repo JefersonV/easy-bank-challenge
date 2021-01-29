@@ -4,19 +4,16 @@
 
   &-image {
     //345 medida total del fondo
-    margin: auto;
-    height: 345px;
-    background-image: url("../../assets/images/bg-intro-mobile.svg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    position: relative;
-    z-index: -10;
-    top: -45px;
+    border: 1px solid skyblue;
+    height: 300px;
+    margin: 0 calc(-1 * var(--wrapperSpace));
+    background: url("../../assets/images/image-mockups.png") center bottom
+        no-repeat,
+      url("../../assets/images/bg-intro-mobile.svg") center no-repeat;
+    background-size: 345px, cover;
+    margin-bottom: 1.2em;
   }
-  &-image img {
-    width: 360px;
-    position: relative;
-    z-index: -10;
-    top: -82px;
+  &-imageSrc {
+    display: none;
   }
 }
