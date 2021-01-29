@@ -21,13 +21,32 @@
   padding-bottom: 6em;
 }
 
+.hero-content {
+  height: 550px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 420px 1fr;
+      grid-template-columns: 420px 1fr;
+      grid-template-areas: "description image";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-description {
+  width: 420px;
+}
+
 .hero-image {
   border: 1px solid skyblue;
-  height: 300px;
+  height: inherit;
   margin: 0 calc(-1 * var(--wrapperSpace));
   background: url("../../assets/images/image-mockups.png") center bottom no-repeat, url("../../assets/images/bg-intro-mobile.svg") center no-repeat;
   background-size: 345px, cover;
   margin-bottom: 1.2em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: image;
 }
 
 .hero-imageSrc {
