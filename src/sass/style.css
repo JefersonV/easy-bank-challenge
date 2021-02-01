@@ -41,7 +41,7 @@
 @media screen and (min-width: 1024px) {
   .hero {
     text-align: left;
-    background: url("../../assets/images/bg-intro-desktop.svg") left 450px top -290px no-repeat;
+    background: url("../../assets/images/bg-intro-desktop.svg") left 560px top -290px no-repeat !important;
     background-size: cover;
     min-height: 350px;
     -webkit-box-sizing: border-box;
@@ -49,7 +49,6 @@
     position: relative;
   }
   .hero-content {
-    border: 1px solid red;
     display: -ms-grid;
     display: grid;
     -webkit-box-align: center;
@@ -61,7 +60,6 @@
         grid-template-columns: 440px 1fr;
   }
   .hero-description {
-    border: 1px solid green;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: description;
@@ -72,9 +70,8 @@
     grid-area: image;
     min-height: inherit;
     position: absolute;
-    border: 1px solid purple;
-    width: 545px;
-    right: 0;
+    width: 520px;
+    right: 25px;
     top: 0;
     height: 768px;
     background: url("../../assets/images/image-mockups.png") left top -6.3em no-repeat;
@@ -160,6 +157,12 @@
 
 .is-hidden {
   display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .choose {
+    text-align: left;
+  }
 }
 
 .title-h2 {
