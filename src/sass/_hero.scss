@@ -19,42 +19,89 @@
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .hero {
     text-align: left;
-    background: url("../images/bg-intro-desktop.svg") left 650px top -290px no-repeat;
+    background: url("../../assets/images/bg-intro-desktop.svg") left 450px top -290px
+      no-repeat;
     background-size: cover;
-    min-height: 550px;
+    min-height: 350px;
     box-sizing: border-box;
-  }
-  &-content {
     position: relative;
-    // border: 1px solid red;
-    display: grid;
-    align-items: center;
-    min-height: 550px;
-    grid-template-areas: "description image";
-    grid-template-columns: 370px 1fr;
-  }
-  &-description {
-    // border: 1px solid green;
+
+    &-content {
+      border: 1px solid red;
+      display: grid;
+      align-items: center;
+      min-height: 550px;
+      grid-template-areas: "description image";
+      grid-template-columns: 440px 1fr;
+    }
+    &-description {
+      border: 1px solid green;
+      grid-area: description;
+    }
+
+    &-image {
+      grid-area: image;
+      min-height: inherit;
+      // background: none;
+      position: absolute;
+      border: 1px solid purple;
+      width: 545px;
+      // left: 550px;
+      right: 0;
+      top: 0;
+      height: 768px;
+      background: url("../../assets/images/image-mockups.png") left top -6.3em no-repeat;
+      background-size: cover;
+    }
+    &-imageSrc {
+      display: none;
+    }
   }
 
-  &-image {
-    grid-area: image;
-    min-height: inherit;
-    // background: none;
-    position: absolute;
-    // border: 1px solid purple;
-    width: 500px;
-    // left: 550px;
-    left: 0;
-    top: 0;
-    height: 768px;
-    background: url("../images/image-mockups.png") left bottom no-repeat;
-    background-size: cover;
+  .hero {
+    padding: 0;
   }
-  &-imageSrc {
-    display: none;
+  .wrapper {
+    max-width: 1120px;
+    margin: auto;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background: url("../../assets/images/bg-intro-desktop.svg") left 650px top -290px
+      no-repeat;
+    background-size: cover;
+    min-height: 550px;
+  }
+}
+
+/* @media screen and (min-width: 1024px) {
+  // background: url('../images/bg-intro-desktop.svg') left 650px top -290px no-repeat ;
+  .hero {
+    &-content {
+      // position: static;
+    }
+    &-imageSrc {
+      display: block;
+      position: relative;
+      top: -150px;
+      z-index: 1;
+    }
+    &-image {
+      // border: 10px solid pink;
+      // background: url('../images/image-mockups.png') right bottom no-repeat;
+      // background-size: 100%;
+      background: none;
+      // width: 730px;
+      left: 150px;
+      right: 0;
+      top: 0;
+      // right: 0;
+      // top: initial;
+    }
+  }
+} */
