@@ -29,5 +29,36 @@
 @media screen and (min-width: 1024px) {
   .choose {
     text-align: left;
+    &-paragraph {
+      font-size: 1em;
+      line-height: 1.5em;
+      display: inline-block;
+      width: 52%;
+      color: var(--grayBlue);
+      margin-bottom: 2.2em;
+    }
+    &-title {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    &-grid {
+      margin-top: 5em;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 1.5em;
+    }
+
+    .item {
+      //wrapper = 1120px;
+      display: inline-block;
+      width: 250px;
+      height: 280px;
+      &-title {
+        font-size: 1.5em;
+      }
+      &-p {
+        font-size: 1em;
+      }
+    }
   }
 }
