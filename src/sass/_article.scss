@@ -36,3 +36,27 @@
   width: 100%;
   object-fit: cover;
 }
+
+@media screen and (min-width: 1024px) {
+  .title-h2 {
+    font-size: 2.5em;
+    text-align: left;
+  }
+  .card-article {
+    width: 270px;
+    height: 480px;
+  }
+  .card-content {
+  }
+
+  .article-image {
+    width: auto;
+    object-fit: cover;
+  }
+
+  .lastArticles-grid {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1em;
+    margin-top: 3em;
+  }
+}

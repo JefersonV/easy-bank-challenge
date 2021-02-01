@@ -242,6 +242,29 @@
      object-fit: cover;
 }
 
+@media screen and (min-width: 1024px) {
+  .title-h2 {
+    font-size: 2.5em;
+    text-align: left;
+  }
+  .card-article {
+    width: 270px;
+    height: 480px;
+  }
+  .article-image {
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .lastArticles-grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    margin-top: 3em;
+  }
+}
+
 .footer {
   background: var(--darkBlue);
   color: var(--white);
