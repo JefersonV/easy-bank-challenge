@@ -1,9 +1,7 @@
 .header {
   padding: 1em 0;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
   background-color: var(--white);
+  position: relative;
 }
 
 .header-flex {
@@ -22,7 +20,7 @@
   margin: 0;
 }
 
-.header-menu {
+.header-burger {
   width: 30px;
   height: 30px;
   background-image: url("../../assets/images/icon-hamburger.svg");
@@ -30,8 +28,64 @@
   background-position: center;
 }
 
+.header .menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+}
+
+.header li a {
+  text-decoration: none;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu-checkbox:checked ~ .menu {
+  display: block;
+  position: absolute;
+  padding: 1em;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--darkBlue)), color-stop(90%, transparent));
+  background: linear-gradient(to bottom, var(--darkBlue) 0%, transparent 90%);
+}
+
+.header .menu-checkbox:checked ~ .menu a {
+  background: white;
+  display: block;
+  text-align: center;
+  padding: 1em 1em;
+}
+
+.header #checkbox {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header .header-button {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  .header-flex {
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .menu li a {
+    padding: 0 1em;
+    color: var(--grayBlue);
+    font-size: 0.9em;
+  }
+  .header .header-burger {
+    display: none;
+  }
+  .header .header-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -41,26 +95,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .header-nav {
-    display: inherit;
-    list-style: none;
-  }
-  .header-nav li a {
-    text-decoration: none;
-    padding-right: 1em;
-  }
-  .header-menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .header-nav {
-    display: none;
-  }
-  .header-button {
-    display: none;
   }
 }
 

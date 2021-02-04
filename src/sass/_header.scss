@@ -1,9 +1,7 @@
 .header {
   padding: 1em 0;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
   background-color: var(--white);
+  position: relative;
   &-flex {
     display: flex;
     justify-content: space-between;
@@ -13,7 +11,7 @@
   &-image {
     margin: 0;
   }
-  &-menu {
+  &-burger {
     width: 30px;
     height: 30px;
 
@@ -21,36 +19,73 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-}
+  .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+  }
+  & li a {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+  }
 
-@media screen and (min-width: 1024px) {
-  .header {
-    &-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    &-nav {
-      display: inherit;
-      list-style: none;
-    }
-    &-nav li a {
-      text-decoration: none;
-      padding-right: 1em;
-    }
-    &-menu {
-      display: none;
+  .menu {
+    &-checkbox:checked {
+      & ~ .menu {
+        display: block;
+        position: absolute;
+        padding: 1em;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background: linear-gradient(
+          to bottom,
+          var(--darkBlue) 0%,
+          transparent 90%
+        );
+        a {
+          background: white;
+          display: block;
+          text-align: center;
+          padding: 1em 1em;
+        }
+      }
     }
   }
-}
 
-@media screen and (max-width: 1000px) {
-  .header {
-    &-nav {
-      display: none;
+  #checkbox {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      &-button {
+        display: none;
+      }
     }
-    &-button {
-      display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .menu {
+      display: flex;
+      & li a {
+        padding: 0 1em;
+        color: var(--grayBlue);
+        font-size: 0.9em;
+      }
+    }
+
+    .header {
+      &-burger {
+        display: none;
+      }
+      &-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
   }
 }
