@@ -65,7 +65,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .header .header-button {
     display: none;
   }
@@ -217,6 +217,10 @@
 .choose-title {
   font-size: 2em;
   font-weight: 400;
+}
+
+.choose-paragraph {
+  color: var(--grayBlue);
 }
 
 .item-p {
