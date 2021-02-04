@@ -26,6 +26,17 @@
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .choose {
+    &-grid {
+      margin-top: 5em;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5em;
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .choose {
     text-align: left;
@@ -45,13 +56,13 @@
       margin-top: 5em;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      column-gap: 1.5em;
+      column-gap: 1em;
     }
 
     .item {
       //wrapper = 1120px;
       display: inline-block;
-      width: 250px;
+      width: 240px;
       height: 280px;
       &-title {
         font-size: 1.5em;
