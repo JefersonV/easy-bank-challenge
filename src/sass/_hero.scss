@@ -1,30 +1,111 @@
 .hero {
   text-align: center;
-  padding-bottom: 6em;
-  &-content {
-    height: 550px;
-    display: grid;
-    grid-template-columns: 420px 1fr;
-    grid-template-areas: "description image";
-    align-items: center;
-  }
-
-  &-description {
-    width: 420px;
+  padding-bottom: 5em;
+  background: var(--lightGray);
+  .copy {
+    margin-bottom: 2.5em;
   }
   &-image {
-    //345 medida total del fondo
-    border: 1px solid skyblue;
-    height: inherit;
+    // border: 1px solid red;
+    height: 300px;
     margin: 0 calc(-1 * var(--wrapperSpace));
     background: url("../../assets/images/image-mockups.png") center bottom
         no-repeat,
       url("../../assets/images/bg-intro-mobile.svg") center no-repeat;
     background-size: 345px, cover;
     margin-bottom: 1.2em;
-    grid-area: image;
   }
   &-imageSrc {
     display: none;
   }
 }
+@media screen and (min-width: 1024px) {
+  .hero {
+    text-align: left;
+    background: url("../../assets/images/bg-intro-desktop.svg") left 560px top -290px
+      no-repeat !important;
+    background-size: cover;
+    min-height: 350px;
+    box-sizing: border-box;
+    position: relative;
+
+    &-content {
+      //border: 1px solid red;
+      display: grid;
+      align-items: center;
+      min-height: 550px;
+      grid-template-areas: "description image";
+      grid-template-columns: 440px 1fr;
+    }
+    &-description {
+      //border: 1px solid green;
+      grid-area: description;
+    }
+
+    &-image {
+      grid-area: image;
+      min-height: inherit;
+      // background: none;
+      position: absolute;
+      //border: 1px solid purple;
+      width: 520px;
+      // left: 550px;
+      right: 25px;
+      top: 0;
+      height: 768px;
+      background: url("../../assets/images/image-mockups.png") left top -6.3em no-repeat;
+      background-size: cover;
+    }
+    &-imageSrc {
+      display: none;
+    }
+  }
+
+  .button {
+    text-align: center;
+  }
+
+  .hero {
+    padding: 0;
+  }
+  .wrapper {
+    max-width: 1120px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background: url("../../assets/images/bg-intro-desktop.svg") left 650px top -290px
+      no-repeat;
+    background-size: cover;
+    min-height: 550px;
+  }
+}
+
+/* @media screen and (min-width: 1024px) {
+  // background: url('../images/bg-intro-desktop.svg') left 650px top -290px no-repeat ;
+  .hero {
+    &-content {
+      // position: static;
+    }
+    &-imageSrc {
+      display: block;
+      position: relative;
+      top: -150px;
+      z-index: 1;
+    }
+    &-image {
+      // border: 10px solid pink;
+      // background: url('../images/image-mockups.png') right bottom no-repeat;
+      // background-size: 100%;
+      background: none;
+      // width: 730px;
+      left: 150px;
+      right: 0;
+      top: 0;
+      // right: 0;
+      // top: initial;
+    }
+  }
+} */
